@@ -1,0 +1,52 @@
+++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++++
+Tips:
+    
+    - You can run js methods in the browser console by typing its name followed by parenthesis
+        E.g. helpfulTip() //Paste this in browser console
+
+    - you can view a websites dataLayer by typing dataLayer in the console.
+
+++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++++
+    
+
+The Data Layer is a virtual space between a website and server.
+The Data is normally used by marketers for tracking :)
+
+
+
+Any key:object value can be stored.
+
+object can be of any type ( string, int, boolean )
+
+This is a really good article on the dataLayer
+
+    https://umbraco.com/blog/a-developers-guide-to-the-data-layer/
+
+
+
+
+****************************** ****************************** ******************************
+IMPORTANT NOTE:
+    ( Im not certain but better to be safe)
+    Remember to clear you dataLayer after playing with this app as it may affect browser performance if you fill it 
+
+    Option 1:
+        navigate to dev tools Application
+        if Local storage has many items in it as a list click on each one to find the local storage data named in this code
+        Delete manually
+    Option 2:
+        if you have nothing worth keeping etc... GitHub password for auto login
+        Then paste in console =>
+        localStorage. clear()
+****************************** ****************************** ******************************
+
+The Stuff in the Data layer 
+
+    Cookie Functionality wont work if you have an ad/tracking blocker enabled
+    Im using the word cookie because it reminds me of Cookie Monster and its more fun to say
+
+    But Local Storage & Session Storage is much better. It is the same concept as cookies but is better (go-oogle it)
+
+
+
+

@@ -1,0 +1,54 @@
+body{
+    background: linear-gradient(to bottom right, yellow 10%, black 10% 20%, yellow 20% 30%, black 30% 40%, yellow 40% 50%, black 50% 60%, yellow 60% 70%, black 70% 80%, yellow 80% 90%, black 90% 100%);
+	background-size: 200% 200%;
+	animation: gradient 10s infinite; 
+    
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 50% 100%;
+	}
+	100% {
+		background-position: 100% 0%;
+	}
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+.bubble {
+    border: 4px solid rgba(255, 255, 255, 0.215);
+    z-index:2;
+    border-radius: 1rem;
+    color: white;
+    height: 10em;
+    padding: 2em;
+    text-align: center;
+    width: 10em;
+    background: linear-gradient(135deg, black 10%, yellow 10% 20%, black 20% 30%, yellow 30% 40%, black 40% 50%, yellow 50% 60%, black 60% 70%, yellow 70% 80%, black 80% 90%, yellow 90% 100%);
+	background-size: 200% 200%;
+	animation: gradient 10s infinite;
+}
+
+
+.bubble:hover{
+    transition: all .5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.bubble:not(:hover) {
+    transition: all .2s ease-in-out;
+    transform: scale(1);
+}
+
+.bubble * {
+    margin-top: 1em;
+}
